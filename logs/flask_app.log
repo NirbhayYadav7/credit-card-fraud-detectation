@@ -1,0 +1,87 @@
+2025-11-01 17:44:03,380 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.2:5000
+2025-11-01 17:44:03,380 INFO: [33mPress CTRL+C to quit[0m
+2025-11-01 17:44:03,384 INFO:  * Restarting with stat
+2025-11-01 17:44:08,544 WARNING:  * Debugger is active!
+2025-11-01 17:44:08,686 INFO:  * Debugger PIN: 130-668-205
+2025-11-01 17:45:54,884 INFO: 127.0.0.1 - - [01/Nov/2025 17:45:54] "GET / HTTP/1.1" 200 -
+2025-11-01 17:46:12,946 INFO: 127.0.0.1 - - [01/Nov/2025 17:46:12] "[33mGET /index.html HTTP/1.1[0m" 404 -
+2025-11-01 17:53:07,123 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.2:5000
+2025-11-01 17:53:07,123 INFO: [33mPress CTRL+C to quit[0m
+2025-11-01 17:53:07,126 INFO:  * Restarting with stat
+2025-11-01 17:53:11,344 WARNING:  * Debugger is active!
+2025-11-01 17:53:11,414 INFO:  * Debugger PIN: 130-668-205
+2025-11-01 17:55:53,291 INFO: 172.20.10.2 - - [01/Nov/2025 17:55:53] "GET / HTTP/1.1" 200 -
+2025-11-01 17:55:53,690 INFO: 172.20.10.2 - - [01/Nov/2025 17:55:53] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-11-01 17:55:54,512 INFO: 172.20.10.2 - - [01/Nov/2025 17:55:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-01 17:56:28,841 ERROR: Prediction failed
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\pwSkills\credit_card_fruad_detectationa_project\app.py", line 70, in predict
+    proba = float(model.predict_proba(X)[:, 1][0])
+  File "C:\Users\HP\anaconda3\envs\credit_default_app\lib\site-packages\sklearn\pipeline.py", line 904, in predict_proba
+    Xt = transform.transform(Xt)
+  File "C:\Users\HP\anaconda3\envs\credit_default_app\lib\site-packages\sklearn\utils\_set_output.py", line 316, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\HP\anaconda3\envs\credit_default_app\lib\site-packages\sklearn\compose\_column_transformer.py", line 1085, in transform
+    raise ValueError(f"columns are missing: {diff}")
+ValueError: columns are missing: {'BILL_AMT6', 'PAY_AMT3', 'BILL_AMT3', 'PAY_AMT5', 'PAY_4', 'PAY_AMT6', 'BILL_AMT4', 'PAY_6', 'BILL_AMT5', 'PAY_AMT4', 'PAY_5'}
+2025-11-01 17:56:28,894 INFO: 172.20.10.2 - - [01/Nov/2025 17:56:28] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2025-11-01 17:56:54,266 ERROR: Prediction failed
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\pwSkills\credit_card_fruad_detectationa_project\app.py", line 70, in predict
+    proba = float(model.predict_proba(X)[:, 1][0])
+  File "C:\Users\HP\anaconda3\envs\credit_default_app\lib\site-packages\sklearn\pipeline.py", line 904, in predict_proba
+    Xt = transform.transform(Xt)
+  File "C:\Users\HP\anaconda3\envs\credit_default_app\lib\site-packages\sklearn\utils\_set_output.py", line 316, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\HP\anaconda3\envs\credit_default_app\lib\site-packages\sklearn\compose\_column_transformer.py", line 1085, in transform
+    raise ValueError(f"columns are missing: {diff}")
+ValueError: columns are missing: {'BILL_AMT6', 'PAY_AMT3', 'BILL_AMT3', 'PAY_AMT5', 'PAY_4', 'PAY_AMT6', 'BILL_AMT4', 'PAY_6', 'BILL_AMT5', 'PAY_AMT4', 'PAY_5'}
+2025-11-01 17:56:54,268 INFO: 172.20.10.2 - - [01/Nov/2025 17:56:54] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2025-11-01 17:57:55,567 ERROR: Prediction failed
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\pwSkills\credit_card_fruad_detectationa_project\app.py", line 70, in predict
+    proba = float(model.predict_proba(X)[:, 1][0])
+  File "C:\Users\HP\anaconda3\envs\credit_default_app\lib\site-packages\sklearn\pipeline.py", line 904, in predict_proba
+    Xt = transform.transform(Xt)
+  File "C:\Users\HP\anaconda3\envs\credit_default_app\lib\site-packages\sklearn\utils\_set_output.py", line 316, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\HP\anaconda3\envs\credit_default_app\lib\site-packages\sklearn\compose\_column_transformer.py", line 1085, in transform
+    raise ValueError(f"columns are missing: {diff}")
+ValueError: columns are missing: {'BILL_AMT6', 'PAY_AMT3', 'BILL_AMT3', 'PAY_AMT5', 'PAY_4', 'PAY_AMT6', 'BILL_AMT4', 'PAY_6', 'BILL_AMT5', 'PAY_AMT4', 'PAY_5'}
+2025-11-01 17:57:55,570 INFO: 172.20.10.2 - - [01/Nov/2025 17:57:55] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2025-11-01 18:00:34,295 INFO: 172.20.10.2 - - [01/Nov/2025 18:00:34] "GET / HTTP/1.1" 200 -
+2025-11-01 18:00:34,350 INFO: 172.20.10.2 - - [01/Nov/2025 18:00:34] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-11-01 18:01:24,892 INFO: Prediction made: 0.4100 label=0 input_keys=LIMIT_BAL,SEX,EDUCATION,MARRIAGE,AGE,PAY_0,PAY_2,PAY_3,PAY_4,PAY_5,PAY_6,BILL_AMT1,BILL_AMT2,BILL_AMT3,BILL_AMT4,BILL_AMT5,BILL_AMT6,PAY_AMT1,PAY_AMT2,PAY_AMT3,PAY_AMT4,PAY_AMT5,PAY_AMT6
+2025-11-01 18:01:24,942 INFO: 172.20.10.2 - - [01/Nov/2025 18:01:24] "POST /predict HTTP/1.1" 200 -
+2025-11-01 18:01:24,993 INFO: 172.20.10.2 - - [01/Nov/2025 18:01:24] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-11-01 18:07:30,930 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.2:5000
+2025-11-01 18:07:30,930 INFO: [33mPress CTRL+C to quit[0m
+2025-11-01 18:07:30,934 INFO:  * Restarting with stat
+2025-11-01 18:07:36,574 WARNING:  * Debugger is active!
+2025-11-01 18:07:36,637 INFO:  * Debugger PIN: 130-668-205
+2025-11-01 18:08:15,319 INFO: Prediction made: 0.4100 label=0 input_keys=LIMIT_BAL,SEX,EDUCATION,MARRIAGE,AGE,PAY_0,PAY_2,PAY_3,PAY_4,PAY_5,PAY_6,BILL_AMT1,BILL_AMT2,BILL_AMT3,BILL_AMT4,BILL_AMT5,BILL_AMT6,PAY_AMT1,PAY_AMT2,PAY_AMT3,PAY_AMT4,PAY_AMT5,PAY_AMT6
+2025-11-01 18:08:15,335 INFO: 172.20.10.2 - - [01/Nov/2025 18:08:15] "POST /predict HTTP/1.1" 200 -
+2025-11-01 18:08:15,985 INFO: 172.20.10.2 - - [01/Nov/2025 18:08:15] "[33mGET /statics/style.css HTTP/1.1[0m" 404 -
+2025-11-01 18:08:22,258 INFO: 172.20.10.2 - - [01/Nov/2025 18:08:22] "GET / HTTP/1.1" 200 -
+2025-11-01 18:08:22,334 INFO: 172.20.10.2 - - [01/Nov/2025 18:08:22] "[33mGET /statics/style.css HTTP/1.1[0m" 404 -
+2025-11-01 18:08:23,576 INFO: 172.20.10.2 - - [01/Nov/2025 18:08:23] "GET / HTTP/1.1" 200 -
+2025-11-01 18:08:23,632 INFO: 172.20.10.2 - - [01/Nov/2025 18:08:23] "[33mGET /statics/style.css HTTP/1.1[0m" 404 -
+2025-11-01 18:08:23,814 INFO: 172.20.10.2 - - [01/Nov/2025 18:08:23] "GET / HTTP/1.1" 200 -
+2025-11-01 18:08:23,866 INFO: 172.20.10.2 - - [01/Nov/2025 18:08:23] "[33mGET /statics/style.css HTTP/1.1[0m" 404 -
+2025-11-01 18:08:24,028 INFO: 172.20.10.2 - - [01/Nov/2025 18:08:24] "GET / HTTP/1.1" 200 -
+2025-11-01 18:08:24,105 INFO: 172.20.10.2 - - [01/Nov/2025 18:08:24] "[33mGET /statics/style.css HTTP/1.1[0m" 404 -
+2025-11-01 18:08:24,826 INFO: 172.20.10.2 - - [01/Nov/2025 18:08:24] "GET / HTTP/1.1" 200 -
+2025-11-01 18:08:24,880 INFO: 172.20.10.2 - - [01/Nov/2025 18:08:24] "[33mGET /statics/style.css HTTP/1.1[0m" 404 -
+2025-11-01 18:08:25,060 INFO: 172.20.10.2 - - [01/Nov/2025 18:08:25] "GET / HTTP/1.1" 200 -
+2025-11-01 18:08:25,124 INFO: 172.20.10.2 - - [01/Nov/2025 18:08:25] "[33mGET /statics/style.css HTTP/1.1[0m" 404 -
+2025-11-01 18:08:25,304 INFO: 172.20.10.2 - - [01/Nov/2025 18:08:25] "GET / HTTP/1.1" 200 -
+2025-11-01 18:08:25,354 INFO: 172.20.10.2 - - [01/Nov/2025 18:08:25] "[33mGET /statics/style.css HTTP/1.1[0m" 404 -

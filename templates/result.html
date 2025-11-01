@@ -1,0 +1,24 @@
+<!-- templates/result.html -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prediction Result</title>
+<link rel="stylesheet" href="/statics/style.css">
+</head>
+<body>
+<div class="container">
+<h1>Prediction Result</h1>
+<p>Predicted probability of default next month: <strong>{{ '%.2f' | format(probability*100) }}%</strong></p>
+<p>Predicted label: <strong>{{ 'Default' if label==1 else 'No Default' }}</strong></p>
+
+
+<h3>Input provided</h3>
+<pre>{{ input }}</pre>
+
+
+<p><a href="/">Make another prediction</a></p>
+</div>
+</body>
+</html>
